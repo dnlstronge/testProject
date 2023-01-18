@@ -12,7 +12,7 @@ const CourseInput = props => {
 
   const formSubmitHandler = event => {
     event.preventDefault();
-    if(onAddGoal.trim().length === 0) {
+    if(props.onAddGoal.trim().length === 0) {
       return 
     }
     props.onAddGoal(enteredValue);
